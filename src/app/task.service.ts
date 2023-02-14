@@ -10,24 +10,15 @@ import { Task } from './model/task';
 export class TaskService {
 
   //Esta URL obtiene el listado de todas las task
-  private baseURL = "/api/tasks";
 
-  private baseURL2 ="http://localhost:8080/api/tasks"; 
+  private baseURL ="http://localhost:8080/api/tasks"; 
 
   constructor(private httpClient : HttpClient) {  }
 
-  ///-------------------------------------
-
-  obtenerListaEmpleados():Observable<Task[]>{
-    return this.httpClient.get<Task[]>(`${this.baseURL2}`); 
-  }
 
 
-  ///-------------------------------------
-
-  //Obtener las task 
-  getListTask():Observable<Task[]> {
-    return this.httpClient.get<Task[]>(`${this.baseURL}`);
+  getListTask():Observable<Task[]>{
+    return this.httpClient.get<Task[]>(`${this.baseURL}`); 
   }
 
   registerTask(task : Task) : Observable<Object>{

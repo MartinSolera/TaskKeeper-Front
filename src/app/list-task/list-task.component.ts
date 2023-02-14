@@ -19,7 +19,7 @@ export class ListTaskComponent implements OnInit{
   }
 
    getDatos(){
-    this.taskService.obtenerListaEmpleados().subscribe(dato => {
+    this.taskService.getListTask().subscribe(dato => {
       this.taskArray = dato;
     });
   }
