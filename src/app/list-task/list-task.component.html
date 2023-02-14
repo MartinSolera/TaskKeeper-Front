@@ -1,0 +1,21 @@
+<h2>List of Task</h2>
+
+<table class="table table-striped">
+<thead class="table-dark">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let task of taskArray"> 
+        <td>{{task.name}}</td>
+        <td>{{task.description}}</td>
+        <td>
+        <!--   <button (click)="updateTask(task.id,task)" class="btn btn-info"> Editar </button> -->
+        <br>
+        <button type="button" class="btn btn-info" (click)="deleteTask(task.id)" style="margin-left: 10px;" id="larraExplica"> Delete </button>
+        </td>
+    </tr>
+</tbody>
+</table>
