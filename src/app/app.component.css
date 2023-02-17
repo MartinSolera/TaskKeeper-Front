@@ -9,12 +9,14 @@ body{
     background-color: #fff;
 }
 
+
+
 .navbar{
     width: 250px;
     height: 100vh;
     position: fixed;
     margin-left: -300;
-    background-color: #7952b3;
+    background-color:#93c7c9; 
     transition: 0.4s;
 }
 .nav-link{
@@ -24,5 +26,13 @@ body{
 .nav-link:active,
 .nav-link:focus,
 .nav-link:hover {
-    background-color: #ffffff26;
+     background-color: #62888b;  
+    
 }
+
+ul.navbar-nav {
+    border-radius: 1px black;
+    margin-top: 10px;
+    margin-left: 75px;
+    background-color: #93c7c9;
+  }
