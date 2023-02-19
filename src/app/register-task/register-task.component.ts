@@ -20,7 +20,6 @@ ngOnInit(): void {
 
 saveTask(){
   this.taskService.registerTask(this.task).subscribe(dato => {
-    console.log(dato);
     this.goToListTask(); 
   },error => console.log(error));
 }
@@ -28,7 +27,6 @@ saveTask(){
 goToListTask(){
   this.router.navigate(['/task']); 
 }
-
 
 onSubmit(){
   this.saveTask();

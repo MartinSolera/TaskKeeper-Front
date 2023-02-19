@@ -15,8 +15,6 @@ export class TaskService {
 
   constructor(private httpClient : HttpClient) {  }
 
-
-
   getListTask():Observable<Task[]>{
     return this.httpClient.get<Task[]>(`${this.baseURL}`); 
   }
@@ -33,5 +31,8 @@ export class TaskService {
     return this.httpClient.delete<Task>(`${this.baseURL}/${id}`); 
   }
 
+  deleteAll():Observable<void>{
+    return this.httpClient.delete<void>(`${this.baseURL}/deleteAll`); 
+  }
    
 }

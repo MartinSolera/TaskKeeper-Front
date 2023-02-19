@@ -6,7 +6,7 @@ import { RegisterTaskComponent } from './register-task/register-task.component';
 
 
 const routes: Routes = [
-  {path : "task", component:ListTaskComponent},
+  {path : "task",component : ListTaskComponent},
   {path:'',redirectTo:'task',pathMatch:'full'},
   {path: 'register-task',component : RegisterTaskComponent}, 
   {path: 'delete-task',component : DeleteTaskComponent}
