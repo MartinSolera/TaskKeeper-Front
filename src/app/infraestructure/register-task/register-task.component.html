@@ -1,0 +1,18 @@
+<div class="col-md-6 offset-md-3">
+<h3 class="text-center">Register of Task</h3>
+
+<form (ngSubmit) = "onSubmit()">
+<div class="form-group">
+    <label>Name : </label>
+    <input type="text" class="form-control" id = "name" [(ngModel)] = task.name name="name">
+</div>
+<div class="form/group">
+    <label>Description : </label>
+    <input type="text" class="form-control" id = "description" [(ngModel)] = task.description name="description">
+</div>
+
+<br>
+<button class="btn btn-success"> Save</button>
+
+</form>
+</div>
